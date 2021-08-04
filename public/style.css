@@ -165,8 +165,30 @@ background-color: var(--main-color); color: #fff;
 .middle_layer{
     display: flex; font-size: 50px; justify-content: space-evenly;
 }
-.middle_layer #temp{
-    
+
+@media (max-width: 768px){
+   
+    .tempInfo{
+        background-color: #1e272e;
+        width: 20rem;
+        margin: auto; color: white; padding-top: 1rem ;
+        border-radius: 1rem; font-family: "Roboto", sans-serif;
+    }
+    .main_content{
+        background: var(--main-bg); width: 34rem; margin: auto;
+        margin-bottom: 8rem; padding:1.5rem; 
+    }
+    input[type="text"]{
+        padding:  1rem;
+       font-size: 16px; font-weight: 600 ; border: none;
+   }
+   input[type="submit"]{
+    font-size: 18px;   border: none; border-radius: 10px;
+}
+.middle_layer{
+    display: flex; font-size: 30px; justify-content: space-evenly;
+}
+
 }
 
 

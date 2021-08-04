@@ -24,7 +24,7 @@ const data_hide = document.querySelector('.middle_layer');
            const tempMood = arrData[0].weather[0].main;
            if(tempMood === "Clear") {
                temp_status.innerHTML =
-               "<i class='fas fa-sun' style='color: #eccc68;'></i>"
+               "<i class='fas fa-sun' style='color: yellow;'></i>"
            }else if(tempMood === "Clouds") {
             temp_status.innerHTML =
             "<i class='fas fa-cloud' style='color: #eccc68;'></i>"
@@ -33,7 +33,7 @@ const data_hide = document.querySelector('.middle_layer');
             "<i class='fas fa-cloud-rain' style='color: #a4b0be;'></i>"
         } else {
             temp_status.innerHTML = 
-            "<i class='fas fa-sun' style='color:#f1f2f6;'></i>"
+            "<i class='fas fa-sun' style='color: yellow;'></i>"
         }
 
         data_hide.classList.remove('data_hide');

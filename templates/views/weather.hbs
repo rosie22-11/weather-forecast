@@ -25,7 +25,7 @@
             <div class="tempInfo">
                 <div class="top_layer">
                     <p id="day">Tuesday</p>
-                    <p id="today_date">13 oct</p>
+                    <p><span id="today_date">13</span><span id="month"> Oct</span> </p>
                 </div>
                 <div class="main_layer">
                     <p id="city_name">Get Output Here</p>
@@ -65,6 +65,22 @@
             let day = document.getElementById('day');
             day.innerText = days;
         };
+
+        const getDate = ()=>{
+            let dateMonth = new Date();
+           let month = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug",
+           "Sept","Oct","Nov","Dec"];
+
+            
+            let currentDate = dateMonth.getDate();
+            let currentMonth = dateMonth.getMonth();
+             monthIs = (month[currentMonth]);
+            let today_day = document.getElementById("today_date");
+            today_day.innerHTML =  currentDate  ;
+            let months = document.getElementById("month");
+            months.innerHTML = " " +monthIs;
+        }
+        getDate();
         getCurrentDay();
   </script>
 
