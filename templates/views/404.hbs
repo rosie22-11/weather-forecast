@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  {{>headerlink}}
+ </head>
+<body>
+  
+        {{>navbar}}
+    
+
+  <!-- main header -->
+
+  <div class="container-fluid main_header">
+      <div class="row">
+          <div class="mx-auto col-md-10 col-12">
+              <div class="row">
+                <div class="col-md-12 col-12 main_header_left align-item-center">
+                 <figure>
+                     <img src="images/404.png" class="img-fluid errimg" title="weather"/>
+                 </figure>
+                 
+                  
+                      <p>Know about me</p>
+                      <h1>{{errorMsg}}</h1>
+                      <a href="/"><button>Go back</button></a>
+               
+                  </div>
+              </div>
+
+          </div>
+      </div>
+  </div>
+
+  <!-- footer -->
+  {{>footer}}
+</body>
+</html>
